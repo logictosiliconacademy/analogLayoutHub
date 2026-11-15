@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/analoghub-kb",
+  basePath: "/analogLayoutHub",
 };
 
 export default nextConfig;

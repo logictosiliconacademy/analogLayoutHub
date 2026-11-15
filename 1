@@ -1,0 +1,17 @@
+cat << 'EOF' > next.config.mjs
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  images: {
+    unoptimized: true,
+  },
+  basePath: "/analogLayoutHub",
+};
+
+export default nextConfig;
+EOF
+
+rm -f build_all.csh
+git add -A
+git commit -m "Set basePath to analogLayoutHub and deploy"
+git push origin main
